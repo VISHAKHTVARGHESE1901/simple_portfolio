@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>About</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="icon" type="image/x-icon" 
+      href="https://cdn.pixabay.com/photo/2021/02/23/18/28/family-6044385_1280.jpg">
+      <style type="text/css">
+        .logo img { float:left;  width: 5%; height: auto; border-radius: 50%; margin-top: 1%;}
+            
+        #navbar a { color: #41436A; text-decoration:solid; font-size: 20px; padding: 14px 16px;
+          font-family: monospace, 'Lucida Bright'; font-weight: bold; transition: all 0.4s ease-in-out;
+        }
+
+        #navbar a:hover { background-color: #41436A; color: #BFDFC9; border-radius: 10px 5px / 10px 5px;}
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        :root { --secondary-color: #151226; --contrast-color: #BFDFC9; }
+
+        .container { display: flex; height: 100vh; justify-content: space-around; width: 100%; height: auto;
+          color: #fff; background-color: var(--secondary-color); border-radius: 20px;
+          position: relative; font-family: monospace, 'Lucida Bright'; transition: all .8s ease; margin-top: 1%;
+        }
+
+        .container_content { width: 50%; }
+
+        .container_content_inner { width: 80%; margin-left: 80px; }
+
+        .container_detail { margin: 50px; width: 50%; overflow: hidden; }
+  
+        p{ line-height: 28px; transform: translateY(300px); animation: slideUp 1.5s ease-in  forwards; }
+        
+        .title { overflow: hidden; height: auto; }
+
+        h1 {font-size: xx-large; color: var(--contrast-color); margin-bottom: 20px; transform: translateY(100px);
+          animation: slideUp 1.5s ease-in  forwards;
+        }
+
+        @keyframes slideIn { 0% { transform: translateX(500px) scale(.2);  } 100% {
+          transform: translateX(0px) scale(1); }
+        }
+
+        @keyframes slideUp { 0% { transform: translateY(300px); } 100% { 
+          transform: translateY(0px);}
+        }
+
+        @keyframes expand {  0% { transform: translateX(1400px); } 100% {
+          transform: translateX(0px); }
+        }
+
+        .social-icon { margin: 0 5px; font-size:30px; color: #41436A; text-decoration: none; }
+
+        .social-icon:hover { color: #BFDFC9; background-color: #41436A;}
+
+        .footer{display: flex; text-align: center; justify-content: center; padding: 20px 5%;}
+      </style>
+    </head>
+
+    <body style="background-color:#BFDFC9;">
+      <div style="display:flex;">
+        <header>
+          <a href="home.html" class="logo">
+            <img src="logo.jpg" alt="Logo">
+          </a>
+          <h1 style=" animation: none !important; transform: none !important; color:#41436A; font-family: 'Lucida Bright'; font-size: medium; display: inline-block; margin-top:25px;">
+            Vishakh Thekkiniyath Varghese
+          </h1>
+        </header>
+
+        <nav id="navbar">
+          <ul style="display: flex; list-style-type: none; justify-content: space-between; 
+          padding: 0; margin: 20px 10px 0 0;">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <section class="intro">
+        <div>
+          <h1 id="myself" style="animation: none !important; transform: none !important; 
+          text-align:center; font-size:x-large; font-family:'Lucida Bright'; color:#41436A;">
+           Myself
+          </h1>
+          
+          <div style="background-color: #151226; font-family: monospace; color: #BFDFC9; 
+          font-size:large; padding: 1%; border-radius: 20px; animation: expand .5s ease forwards;">
+            <p>Hello, my name is <strong>Vishakh Thekkiniyath Varghese</strong>. 
+            I am a passionate software developer and Specializing in developing <i>web applications, mobile applications</i> 
+            with a deep understanding of <i>Java, Python, JavaScript, C#.NET, MySQL, PL/SQL</i> 
+            I have a proven track record of managing large scale projects and leading teams to success. 
+            I am always eager to learn new technologies and thrive in high-paced environments. 
+            My problem-solving skills and attention to detail have helped me deliver high-quality solutions that drive business value. 
+            I look forward to bringing my skills and experiences to new opportunities.</p>
+          </div>
+        </div>
+            
+        <div class= 'container' style="animation: expand .8s ease forwards;">
+          <div class="container_content">
+            <div class="container_content_inner">
+              <div class="title">
+                <h1>Education</h1>             
+              </div>        
+            </div>
+          </div>
+          
+          <div class="container_detail">
+            <div class="detail-inner">
+              <table>
+                <tr>
+                  <th style="font-weight: bolder; font-size: xx-large; padding: 0; text-align: left;">
+                    FULL STACK SOFTWARE DEVELOPMENT
+                  </th>
+                </tr>
+                <tr>
+                  <td style="font-size: x-large; padding: 0;">
+                    PG Diploma (2023 - 2025)
+                  </td>
+                </tr>
+                <tr>
+                  <td style="font-size: x-large; padding: 0;">
+                    Lambton College in Toronto, Ontario, Canada
+                  </td>
+                </tr>
+                <tr><td> <br></td></tr>
+                <tr>
+                  <th style=" font-size: xx-large; padding: 0; text-align: left;">
+                    BACHELOR OF COMPUTER APPLICATIONS
+                  </th>
+                </tr>
+                <tr>
+                  <td style="font-size: x-large; padding: 0;">
+                    Bachelor's Degree (2019 - 2022)
+                  </td>
+                </tr>
+                <tr>
+                  <td style="font-size: x-large; padding: 0;">
+                    MET's College of Advanced Studies, Mala, Kerala, India
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div> 
+        
+        <div class= 'container' style="animation: expand 1.1s ease forwards;">
+          <div class="container_content">
+            <div class="container_content_inner">
+              <div class="title">
+                <h1>Certificates</h1>             
+              </div>        
+            </div>
+          </div>
+          
+          <div class="container_detail">
+            <div class="detail-inner">
+              <table>
+                <tr>
+                  <th style="font-weight: bolder; font-size: xx-large; padding: 0; text-align: left;">
+                    Certificate in PYTHON 
+                  </th>
+                </tr>
+                <tr>
+                  <td style="font-size: x-large; padding: 0;">
+                    Training in PYTHON
+                  </td>
+                </tr>
+                <tr>
+                  <td style="font-size: x-large; padding: 0;">
+                    Riss Technologies Pvt. Ltd, Kochi, Kerala, India
+                  </td>
+                </tr>
+                <tr><td> <br></td></tr>
+                <tr>
+                  <th style=" font-size: xx-large; padding: 0; text-align: left;">
+                    Certificate in Internship
+                  </th>
+                </tr>
+                <tr>
+                  <td style="font-size: x-large; padding: 0;">
+                    Internship in PYTHON + ANDROID
+                  </td>
+                </tr>
+                <tr>
+                  <td style="font-size: x-large; padding: 0;">
+                    Riss Technologies Pvt. Ltd, Kochi, Kerala, India
+                  </td>
+                </tr>
+                <tr><td> <br></td></tr>
+                <tr>
+                  <th style=" font-size: xx-large; padding: 0; text-align: left;">
+                    Certificate in Full Stack Development
+                  </th>
+                </tr>
+                <tr>
+                  <td style="font-size: x-large; padding: 0;">
+                    Training in Full Stack Software Development
+                  </td>
+                </tr>
+                <tr>
+                  <td style="font-size: x-large; padding: 0;">
+                    University of Calicut, Kerala, India
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div> 
+
+        <div class= 'container' style="animation: expand 1.4s ease forwards;">
+          <div class="container_content">
+            <div class="container_content_inner">
+              <div class="title">
+                <h1>Skills</h1>             
+              </div>        
+            </div>
+          </div>
+          
+          <div class="container_detail">
+            <div class="detail-inner" style="display: flex;">
+              <div >
+                <img src="https://th.bing.com/th/id/R.fcb9bf4f7b1c2a15445450b9e20711c7?rik=t3DOw4O5XsNI4Q&pid=ImgRaw&r=0" alt="Java Logo" style=" width: 100%; height: auto;">
+              </div>
+              <div >
+                <img src="https://pluspng.com/img-png/python-logo-png-open-2000.png" alt="Python Logo" style=" width: 50%; height: auto;">
+              </div>
+            </div>
+            <div class="detail-inner" style="display: flex;">
+              <div >
+                <img src="https://loja.mkcode.com.br/wp-content/uploads/2022/07/c-sem-fundo-1536x1530.png" alt="C# Logo" style=" width: 50%; height: auto;">
+              </div>
+              <div >
+                <img src="https://th.bing.com/th/id/R.c5817e31e6d8f23702e01b1e79a9226f?rik=zXNN41TuIkckqg&pid=ImgRaw&r=0" alt="HTML/CSS Logo" style=" width: 100%; height: auto;">
+              </div>
+            </div>
+            <div class="detail-inner" style="display: flex;">
+              <div >
+                <img src="https://cdn.icon-icons.com/icons2/2415/PNG/512/mysql_original_wordmark_logo_icon_146417.png" alt="MySQL Logo" style=" width: 50%; height: auto;">
+              </div>
+              <div >
+                <img src="https://cdn.icon-icons.com/icons2/2415/PNG/512/postgresql_plain_wordmark_logo_icon_146390.png" alt="PgSQL Logo" style=" width: 60%; height: auto;">
+              </div>
+            </div>
+          </div>
+        </div> 
+      </section>
+    </body>
+
+    <footer class="footer">
+        <a href="https://www.instagram.com/vishakh.1901?igsh=NG5mOTN3enU2Z3d0" class="social-icon fa fa-instagram"></a>
+        <a href="https://www.facebook.com/vishak.varghese?mibextid=2JQ9oc" class="social-icon fa fa-facebook"></a>
+        <a href="www.linkedin.com/in/vishakhthekkiniyathvarghese" class="social-icon fa fa-linkedin"></a>
+    </footer>
+</html>

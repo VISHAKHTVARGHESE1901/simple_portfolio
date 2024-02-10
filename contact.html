@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="icon" type="image/x-icon" 
+        href="https://cdn.pixabay.com/photo/2021/02/23/18/28/family-6044385_1280.jpg">
+        <style type="text/css">
+            .logo img { float:left;  width: 5%; height: auto; border-radius: 50%; margin-top: 1%;}
+            
+            #navbar a { color: #41436A; text-decoration:solid; font-size: 20px; padding: 14px 16px;
+                font-family: monospace, 'Lucida Bright'; font-weight: bold; transition: all 0.4s ease-in-out;
+            }
+
+            #navbar a:hover { background-color: #41436A; color: #BFDFC9; border-radius: 10px 5px / 10px 5px;}
+
+            button, input { font-family: monospace; font-weight: 700; letter-spacing: 1.4px;}
+            
+            .background { display: flex; margin: 10% 0 5% 0; }
+
+            .container { flex: 0 1 1400px; margin: auto; padding: 10px; }
+
+            .screen { position: relative; background: #151226; border-radius: 15px; } 
+
+            .screen:after { content: ''; display: block;  position: absolute;  top: 0; left: 20px; z-index: -1;
+                right: 20px; bottom: 0; border-radius: 15px; box-shadow: 0 20px 40px #41436A;
+            }
+
+            .screen-body { display: flex; }
+
+            .screen-body-item {   flex: 1;   padding: 50px; }
+
+            .app-title { display: flex; flex-direction:column; position: relative; color: #BFDFC9;
+                font-size: 26px; font-family: monospace; font-weight: bolder;
+            }
+
+            .app-title:after { content: '   '; display: block; position: absolute; left: 0; bottom: -10px;
+                width: 16%;   height: 4px;  background: #BFDFC9;
+            }
+
+            .app-form-group { margin: 0 0 5% 0; }
+
+            .app-form-group.message { margin-top: 40px; }
+
+            .app-form-group.buttons { margin-bottom: 0; text-align: right; }
+
+            .app-form-control { width: 100%; padding: 10px 0; background: none; border: none;
+                border-bottom: 1px solid #BFDFC9;  color: #abdbe4;  font-size: 14px;
+                text-transform: uppercase;   outline: none;  transition: border-color .2s;
+            }
+
+            .app-form-control::placeholder {  color: #a6b0a9; }
+
+            .app-form-button { background: none; border: none; color: #BFDFC9; 
+                font-size: 14px; cursor: pointer; outline: none;
+            }
+
+            #send:hover { color: yellowgreen; }
+            #cancel:hover { color: rgb(219, 17, 10); }
+
+            .social-icon { margin: 0 5px; font-size:30px; color: #41436A; text-decoration: none; }
+
+            .social-icon:hover { color: #BFDFC9; background-color: #41436A;}
+
+            .footer{display: flex; text-align: center; justify-content: center; padding: 20px 5%;}
+        </style>  
+    </head>
+    <body style="background-color:#BFDFC9;">
+        <div style="display:flex;"><header>
+            <a href="home.html" class="logo">
+                <img src="logo.jpg" alt="Logo"></a>
+            <h1 style=" color:#41436A; font-family: 'Lucida Bright'; font-size: medium; display: inline-block; margin-top:25px;">
+                Vishakh Thekkiniyath Varghese
+            </h1>
+        </header>
+
+        <nav id="navbar">
+            <ul style="display: flex; list-style-type: none; justify-content: space-between; padding: 0; margin: 20px 10px 0 0;">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav></div>
+
+        <main>
+            <section><form  method="post">
+                <div class="background">
+                    <div class="container">
+                        <div class="screen">
+                            <div class="screen-body">
+                                <div class="screen-body-item left">
+                                    <div class="app-title">
+                                        <span>CONTACT</span>
+                                    </div>
+                                </div>
+                            
+                                <div class="screen-body-item">
+                                    <div class="app-form">
+                                        <div class="app-form-group">
+                                            <input class="app-form-control"
+                                            type="text"  name="name"placeholder="NAME" maxlength="30" required>
+                                        </div>
+                                    
+                                        <div class="app-form-group">
+                                            <input class="app-form-control" type="email" name="email" placeholder="EMAIL" required>
+                                        </div>
+                                    
+                                        <div class="app-form-group">
+                                            <input class="app-form-control" type="tel" name="phonenumber" placeholder="CONTACT NO" required>
+                                        </div>
+                                    
+                                        <div class="app-form-group message">
+                                            <input class="app-form-control" name="textarea" placeholder="MESSAGE">
+                                        </div>
+                                    
+                                        <div class="app-form-group buttons">
+                                            <button class="app-form-button" id="cancel">CANCEL</button>
+                                            <button class="app-form-button" id="send">SEND</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
+
+    <footer class="footer">
+        <a href="https://www.instagram.com/vishakh.1901?igsh=NG5mOTN3enU2Z3d0" class="social-icon fa fa-instagram"></a>
+        <a href="https://www.facebook.com/vishak.varghese?mibextid=2JQ9oc" class="social-icon fa fa-facebook"></a>
+        <a href="www.linkedin.com/in/vishakhthekkiniyathvarghese" class="social-icon fa fa-linkedin"></a>
+    </footer>
+</html>
